@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     </head>
     <body>
@@ -107,13 +108,22 @@
             <section id="contact">
                 <div id="contactPanel">
                     <div class="contactPanelColumn">
-
+                        <img src="/images/contact/map.png" alt="map" id="mapImage"/>
                     </div>
                     <div class="contactPanelColumn">
                         <h2>Napisz do nas!</h2>
                         <h4>Nasza obsługa techniczna dostępna jest 24 godziny na dobę,
                             aby odpowiedzieć na każde <b>Twoje</b> pytanie
                         </h4>
+                        <form action="" id="contactForm">
+                            <div id="contactFormInputGroup">
+                                <input type="text" name="name" id="contactFormInputName" placeholder="Imię" class="contactFormInput">
+                                <input type="text" name="email" id="contactFormInputEmail" placeholder="Email" class="contactFormInput">
+                                <input type="text" name="subject" id="contactFormInputSubject" placeholder="Tytuł" class="contactFormInput">
+                            </div>
+                            <textarea id="contactFormInputArea" name="area" rows="8" cols="50" placeholder="Twoja wiadomość"></textarea>
+                            <input type="submit" value="Wyślij" id="contactFormSubmit" class="btn btnPrimary">
+                        </form>
                     </div>
                 </div>
             </section>
