@@ -20,4 +20,16 @@ function onClickRight() {
     console.log(modalImage);
     console.log(modalImageSrc);
     console.log(gallery);
+
+    let index;
+    for (let i = 0; i < gallery.length; i++) {
+        console.log(gallery[i].getAttribute("src"));
+        if (modalImageSrc.includes(gallery[i].getAttribute("src"))) {
+            index = i;
+        }
+    }
+
+    console.log("index: ", index);
+
+    modalImage.src = gallery[index + 1].src;
 }
